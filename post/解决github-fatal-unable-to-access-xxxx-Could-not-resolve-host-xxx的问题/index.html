@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+<meta charset="utf-8">
+<title>解决github fatal: unable to access &#39;xxxx&#39;: Could not resolve host:xxx的问题 - 吴家小老头</title>
+<base href="/">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<link rel="canonical" href="http://wooo.io/post/解决github-fatal-unable-to-access-xxxx-Could-not-resolve-host-xxx的问题/">
+<link rel="icon" type="image/x-icon" href="https://s.gravatar.com/avatar/dc35d4d4dde5ed76261587d0969f4bc7?s=80">
+<meta name="description" content="这两天遇到一个诡异的问题，就是突然git的push和pull用不了了。报如下错误： 之后去Google baidu了一波，找到一个靠谱的解决方案： 首先ping 代码仓库地址： 1ping gitlab.alibaba-inc.com 如果报错：  那找一台能ping的通的机器，看一下ping通后的ip地址是多少： 最后一步就是把ip地址和代码仓库地址加入本机hosts：">
+<meta name="keywords" content="Github">
+<meta property="og:type" content="website">
+<meta property="og:title" content="解决github fatal: unable to access &#39;xxxx&#39;: Could not resolve host:xxx的问题">
+<meta property="og:url" content="http://wooo.io/post/解决github-fatal-unable-to-access-xxxx-Could-not-resolve-host-xxx的问题/index.html">
+<meta property="og:site_name" content="吴家小老头">
+<meta property="og:description" content="这两天遇到一个诡异的问题，就是突然git的push和pull用不了了。报如下错误： 之后去Google baidu了一波，找到一个靠谱的解决方案： 首先ping 代码仓库地址： 1ping gitlab.alibaba-inc.com 如果报错：  那找一台能ping的通的机器，看一下ping通后的ip地址是多少： 最后一步就是把ip地址和代码仓库地址加入本机hosts：">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://s.gravatar.com/avatar/9d1e4e86858d71d530436b6158c2bc79?s=80">
+<meta property="og:updated_time" content="2019-05-11T17:11:54.103Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="解决github fatal: unable to access &#39;xxxx&#39;: Could not resolve host:xxx的问题">
+<meta name="twitter:description" content="这两天遇到一个诡异的问题，就是突然git的push和pull用不了了。报如下错误： 之后去Google baidu了一波，找到一个靠谱的解决方案： 首先ping 代码仓库地址： 1ping gitlab.alibaba-inc.com 如果报错：  那找一台能ping的通的机器，看一下ping通后的ip地址是多少： 最后一步就是把ip地址和代码仓库地址加入本机hosts：">
+<meta name="twitter:image" content="https://s.gravatar.com/avatar/9d1e4e86858d71d530436b6158c2bc79?s=80">
+<link rel="stylesheet" href="/fonts.b9b22ef890c930ac7a13.css">
+<link rel="stylesheet" href="/styles.f3ea1e219d757e5d89f5.css">
+<link rel="stylesheet" href="/theme.e5e075d8b7ce3d51ecdf.css">
+<script src="/config.7c0421fad62b675f4c5a.js"></script>
+<script type="application/ld+json">[{"@context":"http://schema.org","@type":"WebSite","publisher":{"@type":"Person","name":"Spring.Wu","description":"人生在勤，不索何获。","image":"https://s.gravatar.com/avatar/9d1e4e86858d71d530436b6158c2bc79?s=80"},"url":"http://wooo.io","image":"https://s.gravatar.com/avatar/9d1e4e86858d71d530436b6158c2bc79?s=80","description":null,"author":{"@type":"Person","name":"Spring.Wu","description":"人生在勤，不索何获。","image":"https://s.gravatar.com/avatar/9d1e4e86858d71d530436b6158c2bc79?s=80"},"inLanguage":{"@type":"Language","alternateName":"zh-Hans"}},{"@context":"http://schema.org","@type":"Article","articleSection":"","url":"http://wooo.io/2018/01/23/undefined/undefined/解决github-fatal-unable-to-access-xxxx-Could-not-resolve-host-xxx的问题/","headline":"解决github fatal: unable to access 'xxxx': Could not resolve host:xxx的问题","image":"https://s.gravatar.com/avatar/9d1e4e86858d71d530436b6158c2bc79?s=80","datePublished":"2018-01-23T07:38:51.000Z","dateModified":"2019-05-11T17:11:54.103Z","keywords":"Github","description":null,"publisher":{"@type":"Organization","name":"吴家小老头","logo":{"@type":"ImageObject","url":"https://s.gravatar.com/avatar/9d1e4e86858d71d530436b6158c2bc79?s=80"}},"author":{"@type":"Person","name":"Spring.Wu","description":"人生在勤，不索何获。","image":"https://s.gravatar.com/avatar/9d1e4e86858d71d530436b6158c2bc79?s=80"},"inLanguage":{"@type":"Language","alternateName":"zh-Hans"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://wooo.io/2018/01/23/undefined/undefined/解决github-fatal-unable-to-access-xxxx-Could-not-resolve-host-xxx的问题/"}}]</script><script async src="//www.googletagmanager.com/gtag/js?id=UA-118253374-1"></script>
+<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments)};gtag('js', new Date());gtag('config', 'UA-118253374-1');</script><link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+</head>
+<body>
+<is-d2a57d></is-d2a57d>
+<script src="/runtime.a5dd35324ddfd942bef1.js"></script>
+<script src="/polyfills.bd3fb034406e30e3b5dc.js"></script>
+<script src="/main.54734ab978f98119b312.zh-Hans.js"></script></body>
+</html>
